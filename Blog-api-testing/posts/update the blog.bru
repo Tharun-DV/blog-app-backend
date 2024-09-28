@@ -1,0 +1,20 @@
+meta {
+  name: update the blog
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:5000/api/posts/1
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZjdjN2IzYTllMzllZTg2MDNiYWRlZiIsImlhdCI6MTcyNzUxNDU1MiwiZXhwIjoxNzI3NTE4MTUyfQ.qqyih-weTTcdj8F2NaJQNQ5s9zH9BtMs9tgkx74_9EE
+}
+
+body:json {
+  { "title": "Updated Blog Title", "content": "Updated blog content." }
+}
