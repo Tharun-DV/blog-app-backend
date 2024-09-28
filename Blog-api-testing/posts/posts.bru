@@ -1,0 +1,20 @@
+meta {
+  name: posts
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:5000/api/posts
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2Zjc5MjkwNGQ4Y2JjM2ViNDJlODRmOCIsImlhdCI6MTcyNzUwMDk0NywiZXhwIjoxNzI3NTA0NTQ3fQ.pwb-kT3AdveA4Ay3M5UOlYGb86KnDlcVUe7VkMX2B4k
+  Content-Type: application/json
+}
+
+body:json {
+  { "title": "My Blogs", "content": "Hi i am tharun d v" }
+}
